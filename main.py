@@ -4,6 +4,11 @@ import hashlib
 import pathlib
 import argparse
 
+# Command line arguments:
+# parser.add_argument("source_folder_path", help="Path to the source folder.", type=str)
+# parser.add_argument("destination_folder_path", help="Path to the destination(replica) folder.", type=str)
+# parser.add_argument("sync_interval", help="Time interval expressed in HOURS for synchronization.", type=int)
+# parser.add_argument("log_file_path", help="Path to the log file where the info is written.", type=str)
 
 def log(message):
     with open(log_file_path, "a") as log_file:
